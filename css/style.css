@@ -174,23 +174,7 @@
 
 /* feature section  */
 .feature {
-    padding: 80px 100px 150px 100px;
-    background-image: url("../images/feature.png");
-    background-repeat: no-repeat;
-    background-position: calc(50% - 570px) calc(50% + 220px);
-    overflow: hidden;
-
-    @media /* only for retina displays */
-        only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-            .logo_background {
-                background-image: url("../images/feature@2x.png");
-            }
-        }
+    padding: 80px 0 0 0;
 }
 
 .feature__top {
@@ -223,12 +207,9 @@
     padding-bottom: 100px;
     padding-left: 0;
 }
+
 .feature-list__item {
     padding: 27px 45px;
-    border-bottom: 4px solid transparent;
-}
-.feature-list__item:hover {
-    border-bottom: 4px solid #FA5959;
 }
 .feature-list__link {
     text-decoration: none;
@@ -239,11 +220,81 @@
     letter-spacing: 0.533333px;
     color: #242A45;
 }
-.feature__end {
+.feature-bottom {
+    display: none;
+    padding-bottom: 180px;
+    background-image: url("../images/feature.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 570px) calc(50%);
+    overflow: hidden;
+    
+    @media /* only for retina displays */
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            .logo_background {
+                background-image: url("../images/feature@2x.png");
+            }
+        }
+}
+.feature-intelligent {
+    display: none;
+    padding-bottom: 180px;
+    background-image: url("../images/share.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 570px) calc(50%);
+    overflow: hidden;
+    
+    @media /* only for retina displays */
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            .logo_background {
+                background-image: url("../images/share@2x.png");
+            }
+        }
+}
+.feature-share {
+    display: none;
+    padding-bottom: 180px;
+    background-image: url("../images/intelligent.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 570px) calc(50%);
+    overflow: hidden;
+    
+    @media /* only for retina displays */
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            .logo_background {
+                background-image: url("../share@2x.png");
+            }
+        }
+}
+
+
+.feature-list__item--active {
+    border-bottom: 4px solid #FA5959;
+}
+.feature-bottom--wiew {
+    display: block;
+}
+
+
+.low {
     width: 445px;
     margin-left: auto;
 }
-.feature-bottom__heading {
+.low__heading {
     margin-bottom: 0;
     font-weight: 500;
     font-size: 32px;
@@ -251,7 +302,7 @@
     letter-spacing: -0.1px;
     color: #242A45;
 }
-.feature-bottom__title {
+.low__title {
     margin-bottom: 0;
     font-size: 18px;
     line-height: 28px;
@@ -519,7 +570,7 @@
     background-color: #FA5959;
     color: #FFFFFF;
 }
-.form-box__button {
+.contact__button {
     padding: 12px 24px;
     display: block;
     border: none;
