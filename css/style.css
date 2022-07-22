@@ -578,12 +578,17 @@
 .social__facebook {
     text-decoration: none;
     margin-right: 20px;
- 
+}
+.facebook__img {
+    fill: #fff;
+}
+.twitter__img {
+    fill: #fff;
 }
 .facebook:hover .facebook__img {
     fill: #FA5959;
 }
-.twitter:hover .facebook__img {
+.twitter:hover .twitter__img {
     fill: #FA5959;
 }
 .social__twitter {
